@@ -170,7 +170,7 @@ class App extends React.Component<any, any> {
 
   public walletConnectInit = async () => {
     // bridge url
-    const bridge = "https://bridge.walletconnect.org";
+    const bridge = process.env.REACT_APP_BRIDGE_URL === undefined ? "https://bridge.walletconnect.org" : process.env.REACT_APP_BRIDGE_URL;
 
     // create new walletConnector
     const walletConnector = new WalletConnect({ bridge });
