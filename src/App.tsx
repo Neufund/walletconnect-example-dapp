@@ -716,7 +716,7 @@ class App extends React.Component<any, any> {
             ) : (
               <SBalances>
                 <Banner />
-                <h3>Actions</h3>
+                <h3 id="actions-container">Actions</h3>
                 <Column center>
                   <STestButtonContainer>
                     <STestButton left onClick={this.testSendTransaction}>
