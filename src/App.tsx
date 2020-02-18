@@ -170,7 +170,7 @@ class App extends React.Component<any, any> {
 
   public walletConnectInit = async () => {
     // bridge url
-    const bridge = window.location.href.includes("localhost") ? "http://localhost:5021" : "http://platform.neufund.io/api/wc-bridge-socket";
+    const bridge = window.location.href.includes("localhost") ? "http://localhost:5021" : "https://platform.neufund.io/api/wc-bridge-socket";
 
     // create new walletConnector
     const walletConnector = new WalletConnect({ bridge });
